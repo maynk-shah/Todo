@@ -15,7 +15,7 @@ function ListItems(props){
                <DeleteIcon className="deleteicon" icon='trash'
                onClick={ ()=> props.deleteItem(item.key)}
                />
-           </span> </p>
+           </span> </p> 
        </div> 
    } )
        return(

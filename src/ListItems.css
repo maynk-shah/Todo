@@ -5,6 +5,7 @@
     height: 50px;
     background-color: #bf07ac;
     border-radius: 5px;
+    
 }
 .list p{
     padding: 10px;
@@ -29,17 +30,7 @@
     font-size: 15px;
     cursor: pointer;
 }
-.itemsAnim-enter{
-    opacity: 0.01;
-}
-.itemsAnim-enter .itemsAnim-enter-active{
-    opacity: 1;
-    transition: opacity 300ms ease-in
-}
-.itemsAnim-leave{
-    opacity: 1;
-}
-.itemsAnim-leave .itemsAnim-leave-active{
-    opacity: 0.01;
-    transition: opacity 300ms ease-in
-} 
+
+input[type=checkbox]:checked + input.strikethrough{
+    text-decoration: line-through;
+  }

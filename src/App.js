@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import ListItems from './ListItems'
+import ReactShadowScroll from 'react-shadow-scroll';
+
 
 class App extends Component {
  constructor(props){
@@ -73,10 +75,16 @@ this.setState({
     <button type='submit'>Add</button>
   </form>
 </header>
-<ListItems items={this.state.items}
+<div>
+<ReactShadowScroll>
+  <ListItems  
+items={this.state.items}
 deleteItem={this.deleteItem}
 setUpdate={this.setUpdate}/>
-</div>
+</ReactShadowScroll>
+
+
+</div></div> 
     );
   }
 }
